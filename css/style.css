@@ -28,7 +28,10 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
 }
-p { font-size: 14px;}
+p {font-size: 16px;}
+h1 {font-size: 40px; color: #2A609E;}
+h2 {font-size: 30px; color: #2A609E;}
+h3 {font-size: 20px; color: #2A609E;}
 a {
     color: #F6B12D;
     text-decoration: none;
@@ -40,9 +43,13 @@ img {
     margin: auto;
     position: relative;
 }
+/*===============*/
+/***  BUTTONS  ***/
+/*===============*/
 button {
     margin: auto;
     padding: 10px;
+    border-radius: 50px;
     background: #2A609E;
     color: white;
     transition: all .5s ease-in-out;
@@ -57,12 +64,24 @@ button:hover {
 /*===========*/
 /*** TOOLS ***/
 /*===========*/
+
+/*** colors ***/
 .blue {
     color: #2A609E;
 }
 .red {
     color: #9E2960;
 }
+.white {
+    color: white;
+}
+.alice {
+    color: aliceblue;
+}
+.bg_grey {
+    background:#C3CBD5;;
+}
+/*** Positions ***/
 .clearfix:after {
     content: ".";
     display: block;
@@ -191,7 +210,6 @@ header {
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
 }
-
 .sidebar {
     padding: 0;
     width: 230px;
@@ -209,7 +227,6 @@ header {
 .sidebar a:hover {
     background-color: #fff;
     color: #2A609E;
-    border-radius: 10px 0 0 10px;
 }
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -238,6 +255,7 @@ header {
     padding: 10px;
     font-size: 20px;
 }
+/*** left menu ***/
 .top_form {
     margin: 20px 0 25px;
     text-align: left;
@@ -251,17 +269,7 @@ header {
         padding-left: 0;
     }
 }
-.menu {
-    margin: 20px 0 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: left;
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;    
-}
+/*** menu de liens externes ***/
 @media screen and (max-width: 700px) {
     .menu {
         margin: 0;
@@ -271,6 +279,7 @@ header {
 
     }
 }
+/*** 1 comme son nom l'indique ! ***/
 .name {
     font-size: 36px;
     font-weight: 600;
@@ -280,6 +289,7 @@ header {
     letter-spacing: 2px;
     transform: rotate(-5deg);
 }
+/*** 2 métier ***/
 .job {
     font-size: 18px;
     font-weight: 400;
@@ -287,6 +297,7 @@ header {
     margin-bottom: 5px;
     text-transform: uppercase;
 }
+/*** 3 menu de liens php ***/
 div.php_menu {
     text-align: left; 
     padding-bottom: 20px;
@@ -296,30 +307,76 @@ div.php {
 }
 div.php a {
     text-transform: uppercase;
+    width: 100%;
 }
 .php0 {
     text-align: center;
 }
+/*** 4 menu de liens externes ***/
 .projects {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     text-align: center;
+    color: #F6B12D;
 }
-.tab {
+.menu {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;    
+}
+/*=============*/
+/***  TABLES  ***/
+/*=============*/
+th {
+    line-height: 3;
+}
+tr, th {padding: 0 20px;}
+
+/*** tables commentaires***/
+.com {
+    text-align: left;
+    min-height: 60px;
+    padding: 20px;
+}
+.coms {
+    text-align: left;
     padding: 0;
-    max-height: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+.tdcom1, .thcom1 {
+    width: 20%;
+    text-align: left;
+}
+.tdcom2, .thcom2 {
+    width: 30%;
+    text-align: left;
+    padding: 0;
+}
+.tdcom3, .thcom3 {
+    width: 50%;
+    text-align: left;
+    padding: 0;
 }
 /*================*/
 /*** CONTAINERS ***/
 /*================*/
 div.container {
         margin-left: 250px;
-        padding: 1px 16px;
+        padding: 1px 16px 10% 16px;
         min-height: 100vh;
+}
+@media screen and (max-width: 700px) {
+    div.container {
+        margin-left: 0;
+    }
 }
 .content {
         margin-top: 5%;
         width: 100%;
-
 }
 footer {
     position: fixed;
@@ -352,7 +409,7 @@ form:hover {
 }
 @media screen and (max-width: 700px) {
     form {
-        width: 100%;
+        width: 80%;
         margin: 2% auto;
         padding: 20px;
     }
@@ -391,4 +448,13 @@ label {
     padding-left: 15px;
     color: #2a609e;
     font-weight:600;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: inline-block;
+    background: #F6F6F6;
+    border: 1px solid aliceblue;
+    box-sizing: border-box;
 }

@@ -6,7 +6,7 @@
     <div class="col">
         <form action="verification.php" method="POST"> <!-- redirection vers la page de vérification -->
             <h1 class="blue txtcenter">Bonjour</h1>
-            <h2 class=" blue txtcenter">Connectez-vous pour accéder à votre profil</h2>
+            <h3 class=" blue txtcenter">Connectez-vous pour accéder à votre profil</h3>
             <h1 class="title1">Connexion</h1>
             <label>Login</label>
             <input type="text" placeholder="Entrer le nom d'utilisateur" name="login" required>

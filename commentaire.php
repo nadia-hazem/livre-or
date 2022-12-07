@@ -38,18 +38,21 @@
             }
     }
 
-
     ?>
 
 
-    <form action="" method="post">
-    <textarea name="commentaire" cols="50" rows="10" placeholder="Votre commentaire"></textarea>
-    <input type="submit" name="go" value="Signer">
-    </form>
+        <h2>Laissez un commentaire</h2>
+        <form action="" method="post">
+            <textarea name="commentaire" cols="50" rows="10" placeholder="Merci d'avoir testé ce module !
+                                                                            Votre commentaire"></textarea>
+            <input type="submit" name="go" value="Signer">
+        </form>
+
     <?php
     if (isset($erreur)) echo '<br /><br />',$erreur;
     ?>
-</div>
+</div> <!-- /container -->
+
 <?php include 'footer.php';?>
 
 

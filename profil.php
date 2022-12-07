@@ -13,6 +13,7 @@
 ?>
 
 <div class=container>
+    <h1>Mon Profil</h1>
 
     <div class="row center wrap">
         <form action="" method="post">
