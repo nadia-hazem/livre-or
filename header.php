@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
     <!--FONT-->
     <script src="https://kit.fontawesome.com/12c357b92c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allison-Regular">
     <!--TITLE-->
     <title>Livre d'or</title>
 </head>
@@ -37,30 +37,36 @@
                         $user = $_SESSION['login'];
                         // afficher les liens menus correspondants à la session
                 ?>
-                <?php echo "Bonjour $user &nbsp;"; // connecté?>
-                <?php echo '<a href="index.php"><i class="fa-solid fa-home"></i>Accueil</a>  &nbsp;';?>
-                <?php echo '<a href="profil.php"><i class="fa-solid fa-user"></i>Profil</a>  &nbsp;';?>
-                <?php echo '<a href="livre-or.php"><i class="fa-solid fa-book"></i>Livre d\'or</a>  &nbsp;';?>
-                <?php echo '<a href="index.php?deconnexion=true"><button>Déconnexion</button></a>';?>
+                <div class="col wrap php_menu">
+                    <div class="php0"><?php echo "Bonjour $user &nbsp;"; // connecté?>  </div>               
+                    <div class="php"><?php echo '<a href="index.php"><i class="fa-solid fa-home"></i>Accueil</a>  &nbsp;';?> </div>  
+                    <div class="php"><?php echo '<a href="profil.php"><i class="fa-solid fa-user"></i>Profil</a>  &nbsp;';?> </div>  
+                    <div class="php"><?php echo '<a href="livre-or.php"><i class="fa-solid fa-book"></i>Livre d\'or</a>  &nbsp;';?> </div>  
+                    <div class="php"><?php echo '<a href="index.php?deconnexion=true"><i class="fa-solid fa-plug"></i>Déconnexion</a>';?> </div>  
+                    <a href="mailto:nadia.hazem@laplateforme.io"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </div>
 
                 <?php
-                    } else { ?>
+                    } else { 
+                ?>
 
-                            <?php echo '<a href="index.php"><i class="fa-solid fa-home"></i>Accueil</a>&nbsp;';?>
-                            <?php echo '<a href="livre-or.php"><i class="fa-solid fa-book"></i>Livre d\'or</a>  &nbsp;';?>
-                            <?php echo '<a href="connexion.php"><button>Connexion</button></a>';
-                            echo '<a href="inscription.php"><button>Inscription</button></a>';
+                <div class="col wrap php_menu">
+                    <div class="php"><?php echo '<a href="index.php"><i class="fa-solid fa-home"></i>Accueil</a>&nbsp;';?>   </div>
+                    <div class="php"><?php echo '<a href="livre-or.php"><i class="fa-solid fa-book"></i>Livre d\'or</a>  &nbsp;';?>  </div>
+                    <div class="php"><?php echo '<a href="connexion.php"><i class="fa-solid fa-plug"></i>Connexion</a>'; ?>  </div>
+                    <div class="php"><?php echo '<a href="inscription.php"><i class="fa-solid fa-file-signature"></i>Inscription</a>';?>  </div>
+                    <a href="mailto:nadia.hazem@laplateforme.io"><i class="fa-solid fa-envelope"></i> Contact</a>
+                <?php
                     }   
                 ?>
 
             </div> <!-- end top_form -->
 
             <div class="menu ">
-                <hr class="ombre">
-                <p class="center">voir mes projets</p>
+                <p class="center projects">voir mes projets</p>
                 <a href="https://github.com/nadia-hazem"><img src="img/logo_github_32.png" alt="github" width="16px">mon GitHub</a>
-                <a href=" nadia-hazem.students-laplateforme.io"><img src="img/logo_plesk_32.png" alt="Plesk" width="16px">mon Plesk</a>
-                <a href="https://pictelle.com/"><img src="img/logo_pictelle_32.png" alt="Pictelle" width="16px">WordPress</a>
+                <a href=" https://nadia-hazem.students-laplateforme.io"><img src="img/logo_plesk_32.png" alt="Plesk" width="16px">mon Plesk</a>
+                <a href="https://pictelle.com/"><img src="img/logo_pictelle_32.png" alt="Pictelle" width="16px">mon WordPress</a>
             </div>
         </div> <!-- end sidebar -->
     </header>

@@ -4,7 +4,7 @@
 <div class="col container">
     <div class="content">
         <h2>Accueil</h2>
-        <div class="row">
+        <div class="row center wrap">
             <img class="livredor center" src="img/livredor.png" alt="accueil">
         </div>
         <div class="row center wrap">
