@@ -27,6 +27,7 @@
                         $requete = "SELECT * FROM utilisateurs where login = '".$login."' "; // on récupère les données de l'utilisateur
                         $exec_requete = mysqli_query($conn,$requete); // on exécute la requête
                         $reponse = mysqli_fetch_array($exec_requete); // on récupère le résultat
+
                         $_SESSION['password'] = $reponse['password']; // on stocke le mot de passe dans la session
                         $_SESSION['id'] = $reponse['id']; // on stocke l'id dans la session
 

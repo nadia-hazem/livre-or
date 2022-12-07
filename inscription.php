@@ -2,7 +2,7 @@
 <?php include 'header.php';?>
 <?php include 'dbconnect.php';?>    <!--connexion à la base de données-->
 
-<main>
+<div class="container">
     <?php
         //par défaut, on affiche le formulaire
         $AfficherFormulaire=1;
@@ -36,10 +36,11 @@
         }
         if($AfficherFormulaire==1){ // si le formulaire doit être affiché
             ?>
-            <div class="module2">
-                <h1>Créez un compte</h1>
-                <br />
+
+            <div class="col center">
+            
                 <form method="post" action="">
+                    <h1 class="title1">Créez un compte</h1>
                     Login : <input type="text" name="login">
                     <br />
                     Mot de passe : <input type="password" name="password">
@@ -47,11 +48,11 @@
                     Confirmez le mot de passe : <input type="password" name="password2">
                     <input type="submit" value="Inscription">
                 </form>
-            </div> <!-- /module -->
+            </div> <!-- /col -->
 
             <?php
         }
     ?>
-</main> <!-- /main -->
+</div> <!-- /container -->
 
 <?php include 'footer.php';?>
