@@ -1,17 +1,17 @@
 <!-- INDEX.PHP -->
 <?php include 'header.php';?>
 
-<div class="col container">
+<main>
     <div class="content">
-        <div class="row center wrap">
+        <div class="row center opac">
             <img class="livredor center" src="img/livredor.png" alt="accueil">
         </div>
         <div class="row center wrap">
-            <a href="inscription.php"><button>Inscription</button></a>          
-            <a href="connexion.php"><button>Connexion</button></a>
+            <a href="inscription.php"><button class="animbottom">Inscription</button></a>          
+            <a href="connexion.php"><button class="animbottom">Connexion</button></a>
         </div>
-    </div>
-</div>
+    </div> <!-- /content -->
+</main>
 
 
 <?php include 'footer.php';?>
