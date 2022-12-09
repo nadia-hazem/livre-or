@@ -16,7 +16,7 @@
     <title>Livre d'or</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header animleft">
         <div class="title">
             <p class="name">Nadia Hazem</p>
             <p class="job">Developpeuse web</p>
@@ -62,9 +62,5 @@
                     <a class="nav_link" href="https://pictelle.com/"><img src="img/logo_pictelle_64.png" alt="Pictelle" width="25px">WordPress</a>
                 </div>
 
-                <div id='box'>
-                    <img src="img/pen.png">
-                    <img class='second' src="img/merci.png">
-                </div>
         </nav>
     </header>

@@ -476,9 +476,3 @@ textarea {
         font-size: .7rem;
     }
 }
-
-@media screen and (max-width: 700px) {
-    .pen {
-        display: none;
-    }
-}

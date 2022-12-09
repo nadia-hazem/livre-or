@@ -1,30 +1,20 @@
 /*===========*/
 /***  ANIMS  ***/
 /*===========*/
-#box {
-	position:relative;
-	width:200px;
-	margin:0 auto;
-    height: 200px;
-}
-#box img {
-	position:absolute;
-	left:0;
-}
+
 @keyframes fondu-in-out {
 	0%    { opacity:1; }
 	25%   { opacity:1; }
 	75%   { opacity:0; }
 	100%  { opacity:0; }
 }
-#box img.second {
+.fondu-in-out {
 	animation-name: fondu-in-out;
 	animation-timing-function: ease;
-	animation-iteration-count: infinite;
 	animation-duration: 3s;
-	animation-direction: alternate;
 }
 /*********************/
+
 .zoom {
     -webkit-animation: zoom 1s;
     animation: zoom 1s;
@@ -50,22 +40,6 @@
         opacity: 1;
     }
 }
-/*********************/
-    .slide {
-        position: absolute;
-        left: -300px;
-        height: 100%;
-        -webkit-animation: slide 1s forwards;
-        animation: slide 1s forwards;
-        transition: all 1s ease-in-out;
-    }
-    @-webkit-keyframes slide {
-        100% { left: 0; position: relative; }
-    }
-    @keyframes slide {
-        100% { left: 0; position: relative; }
-    }
-
 /*********************/
 .color {
     -webkit-animation: color 3s;
@@ -125,6 +99,21 @@
     }
     100% {
         right: 0;
+        opacity: 1;
+    }
+}
+.animleft {
+    -webkit-animation: animleft 1s;
+    animation: animleft 1s;
+    transition: all 1s ease-in-out;
+}
+@keyframes animleft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
         opacity: 1;
     }
 }
