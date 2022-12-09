@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
     <?php include 'dbconnect.php';?> <!--connexion à la base de données-->
 
-    <main>
+    <main id="main">
         <h1 class="animtop">Livre d'or</h1>
 
         <?php    
@@ -36,11 +36,11 @@
                     </tr>
                     <?php } ?>
                 </tbody>           
-            </table>  
+            </table>
+            <a href="#main"><i class="fa-solid fa-4x fa-circle-arrow-up"></i></a>  
         </div> <!-- /content -->
+
         <?php        
-
-
             mysqli_close($conn); // on ferme la connexion à MySQL  
         ?>  
 

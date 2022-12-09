@@ -2,6 +2,7 @@
 /***  ANIMS  ***/
 /*===========*/
 
+/* fondu-in-out */
 @keyframes fondu-in-out {
 	0%    { opacity:1; }
 	25%   { opacity:1; }
@@ -13,7 +14,7 @@
 	animation-timing-function: ease;
 	animation-duration: 3s;
 }
-/*********************/
+/* zoom */
 
 .zoom {
     -webkit-animation: zoom 1s;
@@ -28,7 +29,7 @@
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
-/*********************/
+/* opac */
 .opac {
     animation: opac 3s;
 }
@@ -40,7 +41,7 @@
         opacity: 1;
     }
 }
-/*********************/
+/* color */
 .color {
     -webkit-animation: color 3s;
     animation: color 3s;
@@ -58,7 +59,7 @@
     100% {background-color:#2A609E; left:0%;}
 }
 
-/*********************/
+/* animtop */
 .animtop {
     position: relative;
     -webkit-animation: animtop 1s;
@@ -85,7 +86,7 @@
         opacity: 1;
     }
 }
-/*********************/
+/* animright */
 .animright {
     position: relative;
     -webkit-animation: animright 1s;
@@ -102,6 +103,7 @@
         opacity: 1;
     }
 }
+/* animleft */
 .animleft {
     -webkit-animation: animleft 1s;
     animation: animleft 1s;

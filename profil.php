@@ -15,7 +15,6 @@
 
 <main>
     <div class="content">
-        <div>
         <h1 class="animtop">Mon Profil</h1>
 
         <div class="row strech center wrap zoom">
@@ -49,7 +48,8 @@
                     $login = $_POST ['login'];
                     $_SESSION['login'] = $login;
                     $_SESSION['password'] = $password;
-                    echo "Modification effectuée avec succès !";
+                    echo "<b>Modification effectuée avec succès !</b>";
+                    header('Location: profil.php');
 
                 } else {
                     echo "<p style='color:red'>Mot de passe incorrect</p>";

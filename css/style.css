@@ -31,7 +31,7 @@ body {
 }
 p {font-size: 16px;}
 h1 {font-size: 40px; color: #2A609E;}
-h2 {font-size: 30px; color: #2A609E;}
+h2 {font-size: 30px; color: #2A609E; padding-bottom: 2rem; }
 h3 {font-size: 20px; color: #2A609E;}
 
 a {
@@ -289,19 +289,26 @@ footer {
     font-size: 20px;
 }
 
-.bonjour {
-    padding: 2rem;
+/*** bonjour ***/
+.text {
+    line-height: 30px;
+    padding: 1rem;
     color: #F6B12D;
     font-weight: 600;
     display: block!important;
     width: 100%;
     clear: both;
-    border: 2px solid #F6B12D;
 }
+
 .folio {
     clear: both;
 }
-
+i.fa-solid.fa-4x.fa-circle-arrow-up {
+    color: #2A609E;
+    margin-top: 20px;
+    float: right;
+    padding-right: 20px;
+}
 /*=============*/
 /***  TABLES  ***/
 /*=============*/

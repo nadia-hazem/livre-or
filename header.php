@@ -21,6 +21,7 @@
             <p class="name">Nadia Hazem</p>
             <p class="job">Developpeuse web</p>
         </div>
+
         <nav class="nav">
             <!-- tester si l'utilisateur est connecté -->
             <?php
@@ -35,8 +36,7 @@
                     $user = $_SESSION['login'];
                     // afficher les liens menus correspondants à la session
             ?>
-
-                <div class="txtcenter bonjour"><?php echo "Bonjour $user &nbsp;"; // connecté?>  </div>  <br>             
+                <div class="txtcenter text"><?php echo "Bonjour $user &nbsp;"; // connecté?>  </div>  <br>             
                 <a class="nav_link" href="index.php"><i class="fa-solid fa-lg fa-home"></i>Accueil</a>
                 <a class="nav_link" href="profil.php"><i class="fa-solid fa-lg fa-user"></i>Profil</a>  
                 <a class="nav_link" href="livre-or.php"><i class="fa-solid fa-lg fa-book"></i>Livre d\'or</a>
@@ -63,4 +63,5 @@
                 </div>
 
         </nav>
+        
     </header>

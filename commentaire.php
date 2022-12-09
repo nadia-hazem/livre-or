@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'dbconnect.php';?> <!--connexion à la base de données-->
 <?php
-    $id = $_SESSION['id'];
+$id = $_SESSION['id'];
 ?>
 
 <main>
@@ -42,7 +42,8 @@
         ?>
 
 
-            <h2>Laissez un commentaire</h2>
+            <h2 class="animtop">Laissez un commentaire</h2>
+
             <form action="" method="post">
                 <textarea name="commentaire" cols="50" rows="10" placeholder="Merci d'avoir testé ce module !
                                                                                 Votre commentaire"></textarea>
